@@ -1,16 +1,57 @@
-# React + Vite
+# StudyFlow 🎮📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A pixel-art productivity and study companion designed to make studying feel like a game.
 
-Currently, two official plugins are available:
+StudyFlow is a student-focused productivity application that brings tasks, focus sessions, schedules, subjects, progress tracking, and achievements into one interactive workspace.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instead of treating productivity like a boring checklist, StudyFlow turns everyday studying into a small personal adventure.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎮 Pixel-art inspired study environment
+- 📋 Quest/task management
+- ⏱️ Focus timer for study sessions
+- 📅 Calendar and scheduling
+- 📚 Subject organization
+- 📊 Study statistics and progress tracking
+- 🏆 Achievements and XP system
+- 👤 Student profile and character system
+- 🖥️ Retro desktop-style interface
+- 💾 Local data persistence
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- TypeScript
+- CSS
+- React Hooks
+- Context API
+- Local Storage
+
+## 🎨 Design
+
+StudyFlow uses a retro pixel-art inspired interface with:
+
+- Pixel-style typography
+- Retro window interfaces
+- Game-inspired progress systems
+- Pixel characters and environments
+- Interactive dashboard components
+- Desktop-inspired navigation
+
+The goal is to make a productivity tool that feels more like entering your own study world than opening another task manager.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sandhya11-gth/StudyFlow.git
