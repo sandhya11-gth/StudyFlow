@@ -1,0 +1,213 @@
+/* Full Viewport App Container */
+.retro-desktop-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-cream);
+  overflow: hidden;
+}
+
+/* Main Outer Window Border Frame */
+.retro-app-frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 12px;
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-pixel);
+  background-color: var(--bg-window);
+  overflow: hidden;
+}
+
+/* Top Title Bar */
+.retro-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  padding: 0 8px;
+  background-color: var(--bg-topbar);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.retro-top-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retro-pixel-icon {
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-border);
+  box-shadow: 1px 1px 0px var(--color-border);
+}
+
+.retro-top-title {
+  font-size: var(--font-size-title);
+  color: var(--color-text-light);
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 0px var(--color-border);
+}
+
+.retro-window-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.retro-control-btn {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-border);
+  background-color: var(--bg-cream);
+  color: var(--color-text-main);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px var(--color-border);
+}
+
+.retro-control-btn:hover {
+  background-color: var(--color-pink);
+}
+
+.retro-control-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.retro-control-btn.close:hover {
+  background-color: #f87171;
+  color: #fff;
+}
+
+/* Menu Bar */
+.retro-menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 26px;
+  padding: 0 12px;
+  background-color: var(--bg-cream);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.retro-menu-item {
+  font-size: var(--font-size-body);
+  color: var(--color-text-main);
+  cursor: pointer;
+  padding: 2px 4px;
+  letter-spacing: 0.5px;
+}
+
+.retro-menu-item:hover {
+  background-color: var(--color-lavender);
+  outline: 1px dashed var(--color-border);
+}
+
+/* Workspace Desktop Area */
+.retro-workspace {
+  flex: 1;
+  position: relative;
+  overflow: auto;
+  padding: 24px;
+  background-color: var(--bg-cream);
+  background-image: 
+    linear-gradient(to right, rgba(45, 34, 56, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(45, 34, 56, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Decorative Detail: Taped Note Corner */
+.workspace-tape-note {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-pixel-sm);
+  padding: 8px 12px;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.workspace-tape {
+  position: absolute;
+  top: -8px;
+  left: 30%;
+  width: 32px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(45, 34, 56, 0.3);
+  transform: rotate(-3deg);
+}
+
+/* Bottom Taskbar */
+.retro-taskbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+  padding: 0 8px;
+  background-color: var(--bg-taskbar);
+  border-top: 2px solid var(--color-border);
+}
+
+.taskbar-left, .taskbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taskbar-start-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: var(--color-pink);
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-pixel-sm);
+  font-family: var(--font-pixel);
+  font-size: var(--font-size-body);
+  font-weight: bold;
+  color: var(--color-text-main);
+  cursor: pointer;
+}
+
+.taskbar-start-btn:hover {
+  background-color: var(--color-pink-dark);
+}
+
+.taskbar-start-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.taskbar-item {
+  padding: 3px 8px;
+  background-color: var(--bg-window);
+  border: 1px solid var(--color-border);
+  box-shadow: 1px 1px 0px var(--color-border);
+  font-size: var(--font-size-small);
+  color: var(--color-text-main);
+  cursor: pointer;
+}
+
+.taskbar-item.active {
+  background-color: var(--color-lavender);
+  font-weight: bold;
+}
+
+.taskbar-clock {
+  padding: 3px 8px;
+  background-color: var(--bg-cream);
+  border: 1px solid var(--color-border);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}

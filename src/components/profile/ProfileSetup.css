@@ -1,0 +1,302 @@
+/* Container Layout */
+.profile-game-window {
+  width: 90%;
+  max-width: 720px;
+  max-height: 85vh;
+  margin: 10px auto;
+  background-color: var(--bg-window);
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-pixel);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.game-window-top {
+  text-align: center;
+  border-bottom: 2px dashed var(--color-border);
+  padding-bottom: 8px;
+}
+
+.top-decor {
+  font-size: var(--font-size-small);
+  color: var(--color-rose);
+  letter-spacing: 1px;
+}
+
+.game-title {
+  font-size: var(--font-size-page-heading);
+  color: var(--color-text-main);
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.game-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.game-window-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Headings */
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.section-title-wrapper.align-left {
+  justify-content: flex-start;
+}
+
+.star-deco {
+  color: var(--color-rose);
+  font-size: 12px;
+}
+
+.game-section-heading {
+  font-size: var(--font-size-section-heading);
+  font-weight: bold;
+  color: var(--color-text-main);
+  letter-spacing: 0.5px;
+}
+
+/* Character Selection Lineup */
+.character-selection-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-lineup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.character-card-game {
+  position: relative;
+  background-color: var(--bg-cream);
+  border: 2px solid var(--color-border);
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.character-card-game:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-yellow);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-pixel-sm);
+}
+
+.character-card-game.selected {
+  background-color: var(--color-lavender);
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-pixel);
+  transform: translateY(-3px);
+}
+
+.selected-badge {
+  position: absolute;
+  top: -9px;
+  background-color: var(--color-pink);
+  border: 1px solid var(--color-border);
+  padding: 1px 5px;
+  font-size: 8px;
+  font-weight: bold;
+  color: var(--color-text-main);
+  box-shadow: 1px 1px 0px var(--color-border);
+}
+
+.character-art-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-border);
+  background-color: var(--bg-window);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.character-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-game-name {
+  font-size: var(--font-size-body);
+  font-weight: bold;
+  color: var(--color-text-main);
+}
+
+.character-game-tag {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+/* Split Form Section */
+.game-middle-split {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.game-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.game-form-group label {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: var(--color-text-main);
+}
+
+.retro-game-input {
+  font-family: var(--font-pixel);
+  font-size: var(--font-size-body);
+  padding: 6px 8px;
+  background-color: var(--bg-cream);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-main);
+  outline: none;
+  box-shadow: var(--shadow-inset);
+}
+
+.retro-game-input:focus {
+  background-color: #ffffff;
+  border-color: var(--color-border);
+}
+
+/* Status Panel */
+.game-status-panel {
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-pixel-sm);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.status-panel-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 4px;
+}
+
+.pixel-label-tag, .pixel-status-tag {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: var(--color-text-muted);
+}
+
+.pixel-status-tag {
+  color: var(--color-rose);
+}
+
+.status-panel-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preview-art-display {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-window);
+  padding: 2px;
+}
+
+.preview-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-line {
+  display: flex;
+  gap: 6px;
+  font-size: var(--font-size-small);
+}
+
+.stat-label {
+  color: var(--color-text-muted);
+  width: 50px;
+}
+
+.stat-value {
+  font-weight: bold;
+  color: var(--color-text-main);
+}
+
+.stat-value.highlight {
+  color: var(--color-rose);
+}
+
+/* Error Banner */
+.retro-game-error {
+  background-color: #fca5a5;
+  border: 2px solid var(--color-border);
+  color: #7f1d1d;
+  padding: 6px 8px;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Start Button */
+.start-game-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-pink);
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-pixel);
+  font-family: var(--font-pixel);
+  font-size: var(--font-size-section-heading);
+  font-weight: bold;
+  color: var(--color-text-main);
+  cursor: pointer;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+.start-game-btn:hover {
+  background-color: var(--color-pink-dark);
+  transform: translateY(-1px);
+  box-shadow: 4px 4px 0px var(--color-border);
+}
+
+.start-game-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--color-border);
+}

@@ -1,0 +1,86 @@
+/* src/components/dashboard/StudyWorld.css */
+.study-world-panel {
+  background: #1e1b2e;
+  border: 3px solid #4338ca;
+  border-radius: 12px;
+  padding: 16px;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.study-world-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #4338ca;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.world-status-tag {
+  color: #10b981;
+  font-size: 0.85rem;
+}
+
+.study-world-stage {
+  position: relative;
+  height: 200px;
+  background: #111827;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #374151;
+}
+
+.character-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.large-character-sprite {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.study-world-hud {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+  background: #2a2438;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.hud-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hud-label {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.hud-val {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.hud-sep {
+  width: 1px;
+  height: 24px;
+  background: #4b5563;
+}

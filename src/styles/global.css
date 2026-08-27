@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* ==========================================================================
+   STUDYFLOW GLOBAL STYLES & RETRO DESIGN SYSTEM
+   ========================================================================== */
+
+:root {
+  /* Y2K / Retro OS Color Palette */
+  --bg-cream: #f9f5eb;
+  --bg-window: #fffcf7;
+  --bg-topbar: #9d8abf;
+  --bg-taskbar: #eadaf0;
+  
+  /* Accent Colors */
+  --color-pink: #f8c8dc;
+  --color-pink-dark: #e8a8c0;
+  --color-rose: #d880a1;
+  --color-lavender: #dcd3f2;
+  --color-yellow: #fceecb;
+  --color-sage: #cbe3db;
+  
+  /* Structural & Outlines */
+  --color-border: #2d2238;
+  --color-border-light: #4a3b5c;
+  --color-text-main: #2d2238;
+  --color-text-muted: #6b5c77;
+  --color-text-light: #ffffff;
+
+  /* Typography Hierarchy */
+  --font-pixel: 'Pixelify Sans', monospace, sans-serif;
+  
+  --font-size-title: 18px;
+  --font-size-page-heading: 16px;
+  --font-size-section-heading: 14px;
+  --font-size-body: 12px;
+  --font-size-small: 10px;
+
+  /* Retro Hard-Edge Shadows */
+  --shadow-pixel: 3px 3px 0px var(--color-border);
+  --shadow-pixel-sm: 2px 2px 0px var(--color-border);
+  --shadow-inset: inset 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Reset & Pixel Rendering */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  user-select: none;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-cream);
+  color: var(--color-text-main);
+  font-family: var(--font-pixel);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+}
