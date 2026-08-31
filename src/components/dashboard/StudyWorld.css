@@ -84,3 +84,12 @@
   height: 24px;
   background: #4b5563;
 }
+.study-character {
+  position: absolute;
+  width: 90px;
+  height: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  image-rendering: pixelated;
+}

@@ -2,6 +2,7 @@
 import React from 'react';
 import { useStudyFlow } from '../../context/StudyFlowContext';
 import { CHARACTER_SPRITES } from '../../utils/characterAssets';
+import studyCharacter from "../../assets/characters/studyflow_character_idle.png";
 
 export const StudyWorld: React.FC = () => {
   const { profile, isTimerRunning, xp, currentStreak } = useStudyFlow();
